@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+:root {
+  /* fontlar  */
+  --akshar: 'Akshar', sans-serif;
+  --balo: 'Baloo 2', cursive;
+  --chakra: 'Chakra Petch', sans-serif;
+  --dancing-sprit: 'Dancing Script', cursive;
+  --diplomata-SC: 'Diplomata SC', cursive;
+  --DM-Sans: 'DM Sans', sans-serif;
+  --Insie-Flower: 'Indie Flower', cursive;
+  --montserrat: 'Montserrat', sans-serif;
+  --Oleo: 'Oleo Script Swash Caps', cursive;
+  --Pacifico: 'Pacifico', cursive;
+  --Satisfy: 'Satisfy', cursive;
+  --ShadowsInto: 'Shadows Into Light', cursive;
+  --squarePeg: 'Square Peg', cursive;
+  --tapestry: 'Tapestry', cursive;
+  --waterBrush: 'Water Brush', cursive;
+  --ZillaSlab: 'Zilla Slab', serif;
+  --Deger-1: 0.25rem;
+  --Deger-2: 0.5rem;
+  --Deger-3: 1rem;
+  --Deger-4: 1.5rem;
+  --Deger-5: 3rem;
+  /* fontlar  */
+
+  /* renkler */
+  --color1: #ffffff; /* scroll  colors */
+  --color2: #000000; /* scroll  colors */
+  --color3: #a4a4a4; /* scroll  colors */
+  --color4: #eba2a2;
+  --color5: #f8c0c0;
+  --color6: #e6cdb9;
+  --gcolor1: #5a5d64;
+  --gcolor2: #9da1a4;
+  --gcolor3: #767b7f;
+  --gcolor4: #9f5353;
+  --gcolor5: #31237e;
+  --gcolor6: #fbd228;
+  --gcolor7: #b5bccc;
+  --gcolor8: #d2d3d5;
+  --gcolor9: #c26d40;
+  --gcolor10: #f4e9e2;
+  --bgdelgradegri: var(--gcolor2),var(--gcolor1); 
+  --bgdelgradepembe: var(--color5),var(--color4);
+}
+
+/* kaydırma çubuğu ayarları  */
+
+::-webkit-scrollbar {
+  background-color: var(--color5);
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-button {
+  background-color: var(--gcolor4);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gcolor4);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gcolor2);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color4);
+  border-radius: 1rem;
+}
+
+/* kaydırma çubuğu ayarları bitiş  */
+
+
+/* responsive ayarları */
+/* <!-- max genişlik en fazla 600pxe kadar --> */
+@media (max-width: 600px) {
+  /* max 600px başlangıç*/
+    .header-img {
+      visibility: hidden;
+      display: none;
+    }
+    .card-body h1 {
+      margin-top: 25%;
+      font-family: var(--waterBrush);
+      color: white;
+    }
+    .nav-img {
+      display: none;
+    }
+    .mobile-hidden {
+      display: none;
+      visibility: hidden;
+    }
+    .mobile-navbar {
+      visibility: visible;
+    }
+    .menu {
+      display: none;
+    }
+  /* max 600px bitiş */
+}
+
+/* <!-- min genişlik en az 600pxe kadar --> */
+@media (min-width: 600px) {
+  /* min 600px başlangıç*/
+  .header-img-mobile {
+    display: none;
+    visibility: hidden;
+  }
+  .card-body h1 {
+    margin-top: 6%;
+    font-family: var(--waterBrush);
+    color: white;
+  }
+  .nav-img {
+    width: 2.5rem;
+  }
+  .margin-end {
+    margin-right: var(--Deger-3);
+  }
+  .mobile-navbar {
+    display: none;
+  }
+  
+  /* min 600px bitiş */
+}
+
+/* <!-- min genişlik en az 768pxe kadar --> */
+@media (min-width: 768px) {
+  /* min 768px başlangıç*/
+  .header-img-mobile {
+    display: none;
+    visibility: hidden;
+  }
+  .card-body h1 {
+    margin-top: 8%;
+    font-family: var(--waterBrush);
+    color: white;
+  }
+  .nav-img {
+    width: 3rem;
+  }
+  .margin-end {
+    margin-right: var(--Deger-5);
+  }
+  /* min 768px bitiş */
+}
+
+/* <!-- min genişlik en az 900pxe kadar --> */
+@media (min-width: 900px) {
+  /* min 900px başlangıç*/
+  .header-img-mobile {
+    display: none;
+    visibility: hidden;
+  }
+  .card-body h1 {
+    margin-top: 10%;
+    font-family: var(--waterBrush);
+    color: white;
+    font-weight: 0.5rem !important;
+  }
+  .nav-img {
+    width: 3rem;
+  }
+  .margin-end {
+    margin-right: var(--Deger-4);
+  }
+  /* min 900px bitiş */
+}
+
+/* <!-- min genişlik en az 1200pxe kadar --> */
+@media (min-width: 1200px) {
+  /* min 1200px başlangıç*/
+  .header-img-mobile {
+    display: none;
+    visibility: hidden;
+  }
+  .card-body h1 {
+    margin-top: 15%;
+    font-family: var(--waterBrush);
+    color: white;
+  }
+  .nav-img {
+    width: 3rem;
+  }
+  .margin-end {
+    margin-right: var(--Deger-5);
+  }
+  /* min 1200px bitiş */
+}
+
+.yuk {
+  height: 30em;
+}
+
+.bg-multiplay {
+  background-image:
+    repeating-linear-gradient(90deg,
+      var(--gcolor1),
+      var(--gcolor1) 20px,
+      var(--gcolor5) 0,
+      var(--gcolor5) 25px,
+      var(--gcolor3) 0,
+      var(--gcolor3) 35px,
+      var(--gcolor5) 0,
+      var(--gcolor5) 40px,
+      var(--gcolor2) 0,
+      var(--gcolor2) 60px),
+    repeating-linear-gradient(var(--gcolor1),
+      var(--gcolor1) 20px,
+      var(--gcolor5) 0,
+      var(--gcolor5) 25px,
+      var(--gcolor3) 0,
+      var(--gcolor3) 35px,
+      var(--gcolor5) 0,
+      var(--gcolor5) 40px,
+      var(--gcolor2) 0,
+      var(--gcolor2) 60px);
+  background-blend-mode: overlay;
+}
+
+.padding-1 {
+  padding: 2rem;
+}
+
+.menu {
+  background-image: url("Photos/menu-footer-background.jpg");
+}
+.about {
+  background-image: linear-gradient(var(--bgdelgradepembe))
+}
+
+.padding-1 h3 {
+  font-family: var(--Insie-Flower);
+  text-decoration: underline !important;
+}
+
+.padding-1 p {
+  font-family: var(--Insie-Flower);
+  font-size: large;
+  color: black;
+}
+
+.about-2 {
+  background-image: linear-gradient(var(--bgdelgradegri));
+}
+
+.footer-h6 {
+  font-family: var(--squarePeg);
+  color: var(--color4);
+}
+
+.footer-p {
+  font-family: var(--ShadowsInto);
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+.bg-footer {
+  background-color: rgb(159, 83, 83,0.7);
+  border-radius: 0.2rem;
+}
+
+.footer {
+  background-image: url("Photos/menu-footer-background.jpg");
+}
+
+.navbar-mobile-text {
+  font-family: var(--ShadowsInto);
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  background-color: rgb(159, 83, 83,0.7);
+  border-radius: 0.2rem;
+}
+
+.mobile-navbar-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.footer-img {
+  width: 1.5rem;
+}
+
+.designer-text {
+  color: var(--color4);
+}
+
+.footer-logo-img {
+  width: 3rem;
+}
+
