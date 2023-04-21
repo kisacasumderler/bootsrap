@@ -23,9 +23,14 @@
     color: #112a27;
     font-family: 'Water Brush', cursive;
 }
-
+.card-body {
+    position: relative;
+}
 .headercard {
-    margin-top: 10%;
+   position: absolute;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%);
 }
 
 .btnheader {
@@ -50,10 +55,11 @@
 
 .about-1 {
     clip-path: circle(58.6% at 50% 73%);
+    height: 30vw;
 }
 
 .about-1 img {
-    height: 22em;
+    height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
